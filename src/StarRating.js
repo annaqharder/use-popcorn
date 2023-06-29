@@ -1,4 +1,5 @@
 import { useState } from "react";
+import PropTypes from "prop-types";
 import Star from "./Star";
 
 const containerStyle = {
@@ -8,6 +9,17 @@ const containerStyle = {
 };
 const starContainerStyle = {
   display: "flex",
+};
+
+// added prop types --> what kind of data are we expecting
+StarRating.propTypes = {
+  maxRating: PropTypes.number,
+  color: PropTypes.string,
+  size: PropTypes.number,
+  className: PropTypes.string,
+  messages: PropTypes.array,
+  defaultRating: PropTypes.number,
+  onSetRating: PropTypes.func,
 };
 
 function StarRating({
