@@ -51,7 +51,6 @@ function MovieDetails({
       function callback(e) {
         if (e.code === "Escape") {
           onCloseMovie();
-          console.log("CLOSE");
         }
       }
 
