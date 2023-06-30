@@ -1,11 +1,11 @@
 import Logo from "./Logo";
 import SearchBar from "./SearchBar";
 
-function NavBar({ children }) {
+function NavBar({ children, query, setQuery }) {
   return (
     <nav className="nav-bar">
       <Logo />
-      <SearchBar />
+      <SearchBar query={query} setQuery={setQuery} />
       {children}
     </nav>
   );
