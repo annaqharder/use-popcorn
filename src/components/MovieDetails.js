@@ -127,7 +127,7 @@ function MovieDetails({
                     <button className="btn-add" onClick={handleAdd}>
                       + Add to list
                     </button>
-                  )}{" "}
+                  )}
                 </>
               ) : (
                 <p>
