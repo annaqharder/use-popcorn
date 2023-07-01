@@ -85,7 +85,7 @@ function MovieDetails({
       }
       getMovieDetails();
     },
-    [selectedId]
+    [selectedId, KEY]
   );
 
   useEffect(
